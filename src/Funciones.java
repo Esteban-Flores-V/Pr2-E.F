@@ -95,4 +95,24 @@ public class Funciones {
         }
         return prom;
     }
+
+    // Ejercicio 11
+    public static boolean buscarNum(int numBuscado, int... array) {
+        for (int num : array) {
+            if (num == numBuscado) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    // Ejercicio 12
+    public static int contarString(String clave, String... array) {
+        int frecuencia = 0;
+        for (String palabra : array) {
+            if (palabra.equals(clave))
+                frecuencia++;
+        }
+        return frecuencia;
+    }
 }

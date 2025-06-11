@@ -69,6 +69,14 @@ public class Main {
                 double Prom = Ejercicio.promedio(2.6, 3.4, 2.3, 7.7);
                 System.out.println("El Promedio de los doubles es: " + Prom);
             }
+
+            if (input.equals("11")) {
+                int numBuscado = 3;
+                System.out.println(Ejercicio.buscarNum(numBuscado, 4,1,1,6,8,3,1,1));
+            }
+            if (input.equals("12")) {
+
+            }
         }
     }
 }
