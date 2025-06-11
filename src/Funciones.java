@@ -1,3 +1,6 @@
+import java.lang.classfile.attribute.ExceptionsAttribute;
+import java.util.*;
+
 public class Funciones {
     // Ejercicio 1
     public void mostrarSaludo()
@@ -32,5 +35,31 @@ public class Funciones {
         String msg = "1." + opcion1 + "\n2." + opcion2 + "\n3." + opcion3;
         String menu = msg;
         return menu;
+    }
+
+    // Ejercicio 6
+    public void esPar () {
+        int num = 0;
+        Scanner ingresar = new Scanner(System.in);
+        String teclado = "";
+        boolean esPar = false;
+
+        System.out.println("Ingresa un numero");
+        teclado = ingresar.next();
+        try {
+            num = Integer.parseInt(teclado);
+        } catch (NumberFormatException e) {
+            System.out.println("Entrada inválida. Ingresá un número");
+            return;
+        }
+
+
+
+        if (num % 2 == 0) {
+            esPar = true;
+            System.out.println("En efecto es Par");
+        } else {
+            System.out.println("Nono esto no es par");
+        }
     }
 }

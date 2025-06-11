@@ -44,6 +44,10 @@ public class Main {
                 String opcion3 = "Bloquear usuario";
                 System.out.println(Ejercicio.menu(opcion1, opcion2, opcion3));
             }
+
+            if (input.equals("6")) {
+                Ejercicio.esPar();
+            }
         }
     }
 }
