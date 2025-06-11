@@ -32,6 +32,11 @@ public class Main {
                 double area = Ejercicio.calcularArea(base, altura);
                 System.out.println("El area del rectangulo es: " + area);
             }
+
+            if (input.equals("4")) {
+                String texto = "Cavernicola conduciendo un ferrari";
+                Ejercicio.mayus(texto);
+            }
         }
     }
 }

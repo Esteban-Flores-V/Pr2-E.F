@@ -18,4 +18,11 @@ public class F_LVL1 {
         double area = (base * altura);
         return area;
     }
+
+    // Ejercicio 4
+    public void mayus(String texto)
+    {
+        String mayuscula = texto.toUpperCase();
+        System.out.println(mayuscula);
+    }
 }
