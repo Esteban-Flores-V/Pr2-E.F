@@ -1,3 +1,4 @@
+import java.awt.geom.Area;
 import java.util.*;
 
 public class Main {
@@ -23,6 +24,13 @@ public class Main {
             if (input.equals("2")) {
                 String nombre = "Esteban";
                 Ejercicio.saludar(nombre);
+            }
+
+            if (input.equals("3")) {
+                double base = 8.5;
+                double altura = 5.2;
+                double area = Ejercicio.calcularArea(base, altura);
+                System.out.println("El area del rectangulo es: " + area);
             }
         }
     }
