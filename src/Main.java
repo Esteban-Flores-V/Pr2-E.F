@@ -80,6 +80,11 @@ public class Main {
                 System. out.print("El numero de veces que se repite la palabra hola en el array es: ");
                 System.out.println(Ejercicio.contarString(clave, "hola", "pepe", "hola", "hola", "pelicano", "carlos"));
             }
+
+            if (input.equals("13")) {
+                int[] nums = {2, 5, 7, 2, 1, 1, 8};
+                Ejercicio.arrayFormateado(nums);
+            }
         }
     }
 }
