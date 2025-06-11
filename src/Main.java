@@ -99,6 +99,13 @@ public class Main {
                 }
                 System.out.println("]");
             }
+
+            if (input.equals("15")) {
+                String [] estudiantes = {"Pepe", "Juan", "Mario", "Ambar", "Agus", "Sofia"};
+                double [] notas = {6.3 , 3.0 , 9.5, 7.0, 7.0, 5.2};
+                String mejorAlumno = Ejercicio.estudianteTop(estudiantes, notas);
+                System.out.println("El estudiante con la mejor nota es: " + mejorAlumno);
+            }
         }
     }
 }

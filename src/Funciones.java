@@ -136,4 +136,18 @@ public class Funciones {
         }
         return invertido;
     }
+
+    // Ejercicio 15
+    public static String estudianteTop(String[] nombres, double[] notas) {
+        double notaMasAlta = notas[0];
+        int aux = 0;
+
+        for (int i = 1; i < notas.length; i++) {
+            if (notas[i] > notaMasAlta) {
+                notaMasAlta = notas[i];
+                aux = i;
+            }
+        }
+        return nombres[aux];
+    }
 }
