@@ -59,6 +59,11 @@ public class Main {
                 int resultado = Ejercicio.factorialRecursivo(num);
                 System.out.println("El factorial de " + num + " es: " + resultado);
             }
+
+            if (input.equals("9")) {
+                int resultado = Ejercicio.sumar(2,7,5,2,6);
+                System.out.println("El resultado de la suma es: " + resultado);
+            }
         }
     }
 }

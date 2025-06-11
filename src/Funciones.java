@@ -76,4 +76,12 @@ public class Funciones {
         }
     }
 
+    // Ejercicio 9
+    public static int sumar(int... numeros) {
+        int suma = 0;
+        for (int num : numeros) {
+            suma += num;
+        }
+        return suma;
+    }
 }
