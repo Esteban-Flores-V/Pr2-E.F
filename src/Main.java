@@ -85,6 +85,20 @@ public class Main {
                 int[] nums = {2, 5, 7, 2, 1, 1, 8};
                 Ejercicio.arrayFormateado(nums);
             }
+
+            if (input.equals("14")) {
+                int[] array = {6, 7, 1, 5, 4, 4 ,1 ,2 ,9};
+                int[] invertido = Ejercicio.invertirArray(array);
+
+                System.out.print("[");
+                for (int i = 0; i < invertido.length ; i++) {
+                    System.out.print(invertido[i]);
+                    if (i < invertido.length - 1) {
+                        System.out.print(", ");
+                    }
+                }
+                System.out.println("]");
+            }
         }
     }
 }
