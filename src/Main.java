@@ -64,6 +64,11 @@ public class Main {
                 int resultado = Ejercicio.sumar(2,7,5,2,6);
                 System.out.println("El resultado de la suma es: " + resultado);
             }
+
+            if (input.equals("10")) {
+                double Prom = Ejercicio.promedio(2.6, 3.4, 2.3, 7.7);
+                System.out.println("El Promedio de los doubles es: " + Prom);
+            }
         }
     }
 }

@@ -84,4 +84,15 @@ public class Funciones {
         }
         return suma;
     }
+
+    // Ejercicio 10
+    public static double promedio (double... nums) {
+        double suma = 0;
+        double prom = 0;
+        for (double n : nums) {
+            suma += n;
+            prom =  suma / nums.length;
+        }
+        return prom;
+    }
 }
