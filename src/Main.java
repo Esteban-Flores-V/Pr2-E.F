@@ -74,8 +74,11 @@ public class Main {
                 int numBuscado = 3;
                 System.out.println(Ejercicio.buscarNum(numBuscado, 4,1,1,6,8,3,1,1));
             }
-            if (input.equals("12")) {
 
+            if (input.equals("12")) {
+                String clave = "hola";
+                System. out.print("El numero de veces que se repite la palabra hola en el array es: ");
+                System.out.println(Ejercicio.contarString(clave, "hola", "pepe", "hola", "hola", "pelicano", "carlos"));
             }
         }
     }
