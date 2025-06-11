@@ -48,6 +48,11 @@ public class Main {
             if (input.equals("6")) {
                 Ejercicio.esPar();
             }
+
+            if (input.equals("7")) {
+                int num = 7;
+                System.out.println(Ejercicio.cuadrado(num));
+            }
         }
     }
 }

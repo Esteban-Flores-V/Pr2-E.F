@@ -53,13 +53,18 @@ public class Funciones {
             return;
         }
 
-
-
         if (num % 2 == 0) {
             esPar = true;
             System.out.println("En efecto es Par");
         } else {
             System.out.println("Nono esto no es par");
         }
+    }
+
+    // Ejercicio 7
+    public String cuadrado (int num) {
+        int cuadrado = num * num;
+        String C = "El cuadrado de 7 es: " + String.valueOf(cuadrado);
+        return C;
     }
 }
