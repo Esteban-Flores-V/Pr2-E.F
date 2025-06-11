@@ -1,4 +1,3 @@
-import java.lang.classfile.attribute.ExceptionsAttribute;
 import java.util.*;
 
 public class Funciones {
@@ -67,4 +66,14 @@ public class Funciones {
         String C = "El cuadrado de 7 es: " + String.valueOf(cuadrado);
         return C;
     }
+
+    // Ejercicio 8
+    public int factorialRecursivo(int num) {
+        if (num == 0) {
+            return 1;
+        } else {
+            return num * factorialRecursivo(num-1);
+        }
+    }
+
 }

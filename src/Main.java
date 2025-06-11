@@ -53,6 +53,12 @@ public class Main {
                 int num = 7;
                 System.out.println(Ejercicio.cuadrado(num));
             }
+
+            if (input.equals("8")) {
+                int num = 5;
+                int resultado = Ejercicio.factorialRecursivo(num);
+                System.out.println("El factorial de " + num + " es: " + resultado);
+            }
         }
     }
 }
