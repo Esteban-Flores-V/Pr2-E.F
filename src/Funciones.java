@@ -1,4 +1,4 @@
-public class F_LVL1 {
+public class Funciones {
     // Ejercicio 1
     public void mostrarSaludo()
     {
@@ -24,5 +24,13 @@ public class F_LVL1 {
     {
         String mayuscula = texto.toUpperCase();
         System.out.println(mayuscula);
+    }
+
+    // Ejercicio 5
+    public String menu(String opcion1, String opcion2, String  opcion3) {
+        System.out.println("Selecciona alguna opcion");
+        String msg = "1." + opcion1 + "\n2." + opcion2 + "\n3." + opcion3;
+        String menu = msg;
+        return menu;
     }
 }

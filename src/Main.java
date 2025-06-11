@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        F_LVL1 Ejercicio = new F_LVL1();
+        Funciones Ejercicio = new Funciones();
 
         Scanner teclado = new Scanner(System.in);
         String input = "";
@@ -36,6 +36,13 @@ public class Main {
             if (input.equals("4")) {
                 String texto = "Cavernicola conduciendo un ferrari";
                 Ejercicio.mayus(texto);
+            }
+
+            if (input.equals("5")) {
+                String opcion1 = "Enviar Mensajes";
+                String opcion2 = "Realizar llamada";
+                String opcion3 = "Bloquear usuario";
+                System.out.println(Ejercicio.menu(opcion1, opcion2, opcion3));
             }
         }
     }
