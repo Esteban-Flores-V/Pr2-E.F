@@ -37,4 +37,12 @@ public class Estudiante extends Persona {
     public void estudiar() {
         System.out.println("El estudiante " + this.getNombre() + " " + this.getApellido() + " esta estudiando la carrera: " + this.getCarrera());
     }
+
+    @Override
+    public void mostrarInfo() {
+        super.mostrarInfo();
+        System.out.println("Matricula: " + this.getMatricula());
+        System.out.println("Carrera: " + this.getCarrera());
+        System.out.println("Promedio: " + this.getPromedio());
+    }
 }

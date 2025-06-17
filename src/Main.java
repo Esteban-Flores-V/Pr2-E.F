@@ -7,11 +7,54 @@ public class Main {
         Scanner teclado = new Scanner(System.in);
         String Seleccion = "";
 
+        System.out.println("Que TP quieres ver: \n1. Clase Persona\n2. Funciones");
         Seleccion = teclado.next();
 
-        System.out.println("Que TP quieres ver: \n1. Clase Persona\n2. Funciones");
-
         if (Seleccion.equals("1"))
+        {
+            Persona persona1 = new Persona(
+                    "Pepe",
+                    "Butrina",
+                    "33567782",
+                    30,
+                    "Calle Pepe",
+                    "5551234"
+            );
+
+            Estudiante estudiante1 = new Estudiante(
+                    "Maxi",
+                    "Lopez",
+                    "37885700",
+                    19,
+                    "Calle Pepe",
+                    "5552345",
+                    "24422",
+                    "Curso de Barman",
+                    8.7
+            );
+
+            System.out.println("Que quieres ver: \n1. Informacion de la persona\n2. Saludar Persona\n3. Que carrera estudian\n4. Mostrar Info Estudiandte");
+
+            String input = "";
+            input = teclado.next();
+            switch (input) {
+                case "1":
+                    persona1.mostrarInfo();
+                    break;
+                case "2":
+                    persona1.saludo();
+                    break;
+                case "3":
+                    estudiante1.estudiar();
+                    break;
+                case "4":
+                    estudiante1.mostrarInfo();
+                    break;
+                default:
+                    System.out.println("Opcion invalida");
+                    return;
+            }
+        }
 
         if (Seleccion.equals("2"))
         {
