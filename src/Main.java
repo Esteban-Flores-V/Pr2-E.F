@@ -33,7 +33,20 @@ public class Main {
                     8.7
             );
 
-            System.out.println("Que quieres ver: \n1. Informacion de la persona\n2. Saludar Persona\n3. Que carrera estudian\n4. Mostrar Info Estudiandte");
+            Profesor profesor1 = new Profesor(
+                    "Nicolas",
+                    "Aveztru",
+                    "25688211",
+                    48,
+                    "Calle Baltazar",
+                    "5559876",
+                    "Programacion",
+                    800000,
+                    11
+            );
+
+            System.out.println("Que quieres ver: \n1. Informacion de la persona\n2. Saludar Persona\n3. Que carrera estudian\n4. Mostrar Info Estudiandte\n5. Profe Enseña" +
+                    "\n6. Info del profe");
 
             String input = "";
             input = teclado.next();
@@ -49,6 +62,12 @@ public class Main {
                     break;
                 case "4":
                     estudiante1.mostrarInfo();
+                    break;
+                case "5":
+                    profesor1.enseñar();
+                    break;
+                case "6":
+                    profesor1.mostrarInfo();
                     break;
                 default:
                     System.out.println("Opcion invalida");

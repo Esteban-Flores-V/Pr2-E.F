@@ -28,4 +28,18 @@ public class Profesor extends Persona {
     public void setAñosDeExperiencia(int añosDeExperiencia) {
         this.añosDeExperiencia = añosDeExperiencia;
     }
+
+    public void enseñar()
+    {
+        System.out.println("El profesor " + this.getNombre() + " " + this.getApellido() + " esta enseñando en el departamento" +
+                "de " + this.getDepartamento());
+    }
+
+    @Override
+    public void mostrarInfo() {
+        super.mostrarInfo();
+        System.out.println("Departamento: " + this.getDepartamento());
+        System.out.println("Salario: " + this.getSalario());
+        System.out.println("Años de Experiencia: " + this.getAñosDeExperiencia());
+    }
 }
